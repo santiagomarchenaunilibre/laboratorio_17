@@ -1,15 +1,19 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #f4f4f4;    
+    line-height: 1.0;
+    max-width: 1200px;
 }
 header{
     background-color: #28454D;
     color: white;
     padding: 1em 0;
     width: 100%;
-    text-align: center;    
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);    
 }
 #button{
     padding: 0.5em 1em;
@@ -18,65 +22,74 @@ header{
     border-radius: 5px;
     cursor: pointer;    
 }
-.section{
-    padding: 0 20em 0 20em;
-    width: 50% auto;
-    color: #333;    
+section{
+    padding: 20px;
+    /* width: 50% auto; */
+    color: #333;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);    
 }
 #profile{
     border-radius: 50%;
-    width: 10%;
+    width: 20%;
     height: 10% auto;
     margin: 20px auto;    
     box-shadow: #28454D;
 }
 #imagen{
     width: 100%;
-    height: auto;
+    height: 10%;
     border-radius: 50%;
-    margin: 0 auto;
     box-shadow: #28454D;
 }
 .about{
     background-color: white;
     margin: 1em 0;
     padding: 1em;
-    height: 10vh;      
+    height: 11vh;      
     border-radius: 5px;
     text-align: center; 
 }
 .about p{
     font-size: large;
+    margin-top: 5px;
 }
 .skills{
     background-color: white;
     padding: 3px;
-    height: 15vh;      
+    height: 20vh;      
     border-radius: 5px;
     text-align: center; 
 }
 .skills ul{
     list-style-type: none;
-    display: flex;    
-    gap: 30px;
+    display: flex;   
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    padding-left: 6em;
+    gap: 10px;
 }
 .skills li{
     background: #28454D;
     color: white;
-    padding: 1em;
+    padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.9em;
+    width: 100px;
 }
 .skills p{
     font-size:x-large;
     font-weight: bolder;
     color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .contact{
     background-color: white;
     margin: 1em 0;
     padding: 3px;
-    height: 28vh;      
+    height: 32vh;      
     border-radius: 5px;
 }
 .contact h2{
@@ -84,12 +97,17 @@ header{
     font-weight: bolder;
     color: #333;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 label{
     font-weight: bold;
     font-size: medium;
     color: #333;
     margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flexbox;
 }
 input{
     border-radius: 5px;
@@ -107,8 +125,8 @@ textarea{
     margin-left: 50px;
     font-size: 14px;
     padding: 0;
-    line-height: 50px;  
-    border: 2px solid gray;  
+    line-height: 2em;  
+    border: 2px solid gray;
 }
 .button{    
     width: 15%;
@@ -128,8 +146,11 @@ footer{
     background-color: #333;
     padding: 10px 0;
     margin: 4.5em 0;
+    margin-top: 2em;
+    margin-bottom: 1px;
     text-align: center;
-    font-size: larger;    
+    font-size: larger;
+    border-radius: 5px;    
 }
 footer p a{
     color: white;
